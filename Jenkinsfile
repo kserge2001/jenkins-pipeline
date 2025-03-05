@@ -29,7 +29,7 @@ pipeline {
             076892551558.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:v1.$BUILD_NUMBER'
         }    
         }
-    }
+    
     stage('pushImage'){
         steps{
             sh 'docker push \
@@ -39,4 +39,5 @@ pipeline {
         }
     }
    } 
+   }
 
